@@ -20,11 +20,7 @@
     //ignore the warning generated for this line
     BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
     
-    //this will get a pointer to an object that represents the app bundle
-    NSBundle *appBundle = [NSBundle mainBundle];
-    
-    //look in the appBundle for the file BNRReminderViewController.xib
-    BNRReminderViewController  *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:appBundle];
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
