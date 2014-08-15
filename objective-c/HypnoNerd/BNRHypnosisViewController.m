@@ -41,8 +41,18 @@
     //create a view
     CGRect frame = [UIScreen mainScreen].bounds;
     BNRHypnosisView *backgroundView = [[BNRHypnosisView alloc] initWithFrame:frame];
+    UISegmentedControl *colorSegmentedControl = [[UISegmentedControl alloc]
+                                                 initWithItems:@[@"Red",@"Green",@"Blue"]];
+    
+    //how do I lay this out so it's correctly sized and positioned without me guessing coordinates?
+    colorSegmentedControl.frame = CGRectMake(frame.origin.x + 10,
+                                             frame.origin.y + 20,
+                                             frame.size.width * 0.90, 25);
+    colorSegmentedControl.backgroundColor = [UIColor lightGrayColor];
+    //add a UISegmentedControl somewhere here…
     
     //set backgroundView as “the” view of the view controller
+    [backgroundView addSubview:colorSegmentedControl];
     self.view = backgroundView;
 }
 
