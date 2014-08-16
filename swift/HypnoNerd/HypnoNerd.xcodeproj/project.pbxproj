@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B72633F6199F12CC0077F219 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72633F5199F12CC0077F219 /* AppDelegate.swift */; };
-		B72633F8199F12CC0077F219 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72633F7199F12CC0077F219 /* ViewController.swift */; };
 		B72633FD199F12CC0077F219 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B72633FC199F12CC0077F219 /* Images.xcassets */; };
 		B7263409199F12CC0077F219 /* HypnoNerdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7263408199F12CC0077F219 /* HypnoNerdTests.swift */; };
+		B7505FFF199FE5A70041B0BD /* HypnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7505FFE199FE5A70041B0BD /* HypnosisViewController.swift */; };
 		B78FBC88199F138800498D34 /* HypnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78FBC87199F138800498D34 /* HypnosisView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,11 +28,11 @@
 		B72633F0199F12CC0077F219 /* HypnoNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypnoNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B72633F4199F12CC0077F219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B72633F5199F12CC0077F219 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B72633F7199F12CC0077F219 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B72633FC199F12CC0077F219 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B7263402199F12CC0077F219 /* HypnoNerdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnoNerdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7263407199F12CC0077F219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7263408199F12CC0077F219 /* HypnoNerdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnoNerdTests.swift; sourceTree = "<group>"; };
+		B7505FFE199FE5A70041B0BD /* HypnosisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosisViewController.swift; sourceTree = "<group>"; };
 		B78FBC87199F138800498D34 /* HypnosisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosisView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,7 @@
 			children = (
 				B72633F5199F12CC0077F219 /* AppDelegate.swift */,
 				B78FBC87199F138800498D34 /* HypnosisView.swift */,
-				B72633F7199F12CC0077F219 /* ViewController.swift */,
+				B7505FFE199FE5A70041B0BD /* HypnosisViewController.swift */,
 				B72633FC199F12CC0077F219 /* Images.xcassets */,
 				B72633F3199F12CC0077F219 /* Supporting Files */,
 			);
@@ -207,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B72633F8199F12CC0077F219 /* ViewController.swift in Sources */,
+				B7505FFF199FE5A70041B0BD /* HypnosisViewController.swift in Sources */,
 				B78FBC88199F138800498D34 /* HypnosisView.swift in Sources */,
 				B72633F6199F12CC0077F219 /* AppDelegate.swift in Sources */,
 			);
