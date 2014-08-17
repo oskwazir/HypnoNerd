@@ -18,8 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds);
         
-        let hypnosisViewController = HypnosisViewController()
-        self.window!.rootViewController = hypnosisViewController;
+        let hypnosisViewController = HypnosisViewController();
+        
+        //this will be a reference to an object that represents the app bundle
+        let appBundle:NSBundle = NSBundle.mainBundle();
+        
+        //look in appBundle for a file called ReminderViewController.xib
+        let reminderViewController:ReminderViewController = ReminderViewController(nibName: "ReminderViewController", bundle: appBundle);
+        
+        
+        self.window!.rootViewController = reminderViewController;
+        
         self.window!.backgroundColor = UIColor.whiteColor();
         return true
     }
