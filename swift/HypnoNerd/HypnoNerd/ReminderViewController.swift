@@ -27,6 +27,11 @@ class ReminderViewController: UIViewController {
     @IBAction func addReminder(sender:AnyObject){
         if let datePicker = self.datePicker{
             print("Setting a reminder for \(datePicker.date)");
+            
+            let note:UILocalNotification = UILocalNotification();
+            note.alertBody = "Hypnotize me!";
+            note.fireDate = datePicker.date;
+            UIApplication.sharedApplication().scheduleLocalNotification(note);
         }
     }
 }

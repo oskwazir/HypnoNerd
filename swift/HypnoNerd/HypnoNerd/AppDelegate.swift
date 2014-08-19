@@ -38,6 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.rootViewController = tabBarController;
         
         self.window!.backgroundColor = UIColor.whiteColor();
+        
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert |
+            UIUserNotificationType.Badge, categories: nil
+            ))
         return true
     }
 
