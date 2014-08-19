@@ -15,12 +15,14 @@ class ReminderViewController: UIViewController {
         fatalError("NSCoding not supported")
     }
     
-    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    override init(){
+        
+        //so passing nil as nibName does not do a xib lookup like it does in Obj-c
+        //I wonder why
+        super.init(nibName: "ReminderViewController", bundle: nil)
         self.tabBarItem.title = "Reminder";
         self.tabBarItem.image = UIImage(named: "reminder.png");
     }
-    
     
     @IBAction func addReminder(sender:AnyObject){
         if let datePicker = self.datePicker{

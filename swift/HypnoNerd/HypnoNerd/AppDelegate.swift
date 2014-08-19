@@ -24,7 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let appBundle:NSBundle = NSBundle.mainBundle();
         
         //look in appBundle for a file called ReminderViewController.xib
-        let reminderViewController:ReminderViewController = ReminderViewController(nibName: "ReminderViewController", bundle: appBundle);
+        
+        //the book says for obj-c view controller intialization that init(nibName nibNameOrNil: String!, bundle)will get called
+        //by just calling init(). Not the case in Swift. In HypnosisViewController I created a convenience init that calls
+        // init(nibName nibNameOrNil: String!, bundle)
+        let reminderViewController:ReminderViewController = ReminderViewController();
         
         let tabBarController:UITabBarController = UITabBarController();
         
