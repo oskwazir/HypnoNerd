@@ -11,6 +11,16 @@ import UIKit
 class ReminderViewController: UIViewController {
     @IBOutlet weak var datePicker:UIDatePicker?
     
+    required init(coder: NSCoder) {
+        fatalError("NSCoding not supported")
+    }
+    
+    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.tabBarItem.title = "Reminder";
+        self.tabBarItem.image = UIImage(named: "reminder.png");
+    }
+    
     
     @IBAction func addReminder(sender:AnyObject){
         if let datePicker = self.datePicker{
