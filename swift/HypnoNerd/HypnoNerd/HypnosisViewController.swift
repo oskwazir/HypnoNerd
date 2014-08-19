@@ -10,19 +10,16 @@ import UIKit
 
 class HypnosisViewController: UIViewController {
     
-    
-    /***
-    *** Couldn't get init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) 
-    *** to compile so I just used vanilla init as seen in the file at:
-    ***  https://github.com/davidkobilnyk/BNRGuideSolutionsInSwift/blob/9e335832468059d8f6dfc9222b2837c190c9d1b2/06-ViewControllers/HypnoNerd/HypnoNerd/BNRHypnosisViewController.swift
-    ***/
-    
     required init(coder: NSCoder) {
         fatalError("NSCoding not supported")
     }
     
-   override init() {
-        super.init(nibName: "HypnosisViewController", bundle: nil)
+    override convenience init(){
+        self.init(nibName: nil,bundle: nil)
+    }
+    
+    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.tabBarItem.title = "Hypnotize";
         self.tabBarItem.image = UIImage(named: "hypnosis.png");
     }
