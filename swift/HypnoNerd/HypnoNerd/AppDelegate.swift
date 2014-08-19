@@ -26,8 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //look in appBundle for a file called ReminderViewController.xib
         let reminderViewController:ReminderViewController = ReminderViewController(nibName: "ReminderViewController", bundle: appBundle);
         
+        let tabBarController:UITabBarController = UITabBarController();
         
-        self.window!.rootViewController = reminderViewController;
+        tabBarController.viewControllers = [hypnosisViewController,reminderViewController];
+        
+        
+        self.window!.rootViewController = tabBarController;
         
         self.window!.backgroundColor = UIColor.whiteColor();
         return true
