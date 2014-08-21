@@ -24,6 +24,13 @@ class ReminderViewController: UIViewController {
         self.tabBarItem.image = UIImage(named: "reminder.png");
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if let datePicker = self.datePicker{
+            datePicker.minimumDate = NSDate(timeIntervalSinceNow: 60)
+        }
+    }
+    
     @IBAction func addReminder(sender:AnyObject){
         if let datePicker = self.datePicker{
             print("Setting a reminder for \(datePicker.date)");
