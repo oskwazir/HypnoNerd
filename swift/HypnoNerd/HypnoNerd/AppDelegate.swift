@@ -30,9 +30,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // init(nibName nibNameOrNil: String!, bundle)
         let reminderViewController:ReminderViewController = ReminderViewController();
         
+        let quizViewController:QuizViewController = QuizViewController()
+        
         let tabBarController:UITabBarController = UITabBarController();
         
-        tabBarController.viewControllers = [hypnosisViewController,reminderViewController];
+        tabBarController.viewControllers = [
+            hypnosisViewController,
+            reminderViewController,
+            quizViewController ];
         
         
         self.window!.rootViewController = tabBarController;

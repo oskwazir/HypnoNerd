@@ -14,6 +14,8 @@
 		B7506001199FF2BD0041B0BD /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7506000199FF2BD0041B0BD /* ReminderViewController.swift */; };
 		B7506003199FF45E0041B0BD /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7506002199FF45E0041B0BD /* ReminderViewController.xib */; };
 		B78FBC88199F138800498D34 /* HypnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78FBC87199F138800498D34 /* HypnosisView.swift */; };
+		B7A7CC3819A6D97D00B99F20 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A7CC3619A6D97D00B99F20 /* QuizViewController.swift */; };
+		B7A7CC3919A6D97D00B99F20 /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7A7CC3719A6D97D00B99F20 /* QuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		B7506000199FF2BD0041B0BD /* ReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		B7506002199FF45E0041B0BD /* ReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
 		B78FBC87199F138800498D34 /* HypnosisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosisView.swift; sourceTree = "<group>"; };
+		B7A7CC3619A6D97D00B99F20 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		B7A7CC3719A6D97D00B99F20 /* QuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				B7505FFE199FE5A70041B0BD /* HypnosisViewController.swift */,
 				B7506000199FF2BD0041B0BD /* ReminderViewController.swift */,
 				B7506002199FF45E0041B0BD /* ReminderViewController.xib */,
+				B7A7CC3619A6D97D00B99F20 /* QuizViewController.swift */,
+				B7A7CC3719A6D97D00B99F20 /* QuizViewController.xib */,
 				B71EB69919A31B0000614C41 /* Images.xcassets */,
 				B72633F3199F12CC0077F219 /* Supporting Files */,
 			);
@@ -197,6 +203,7 @@
 			files = (
 				B7506003199FF45E0041B0BD /* ReminderViewController.xib in Resources */,
 				B71EB69A19A31B0000614C41 /* Images.xcassets in Resources */,
+				B7A7CC3919A6D97D00B99F20 /* QuizViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7506001199FF2BD0041B0BD /* ReminderViewController.swift in Sources */,
+				B7A7CC3819A6D97D00B99F20 /* QuizViewController.swift in Sources */,
 				B7505FFF199FE5A70041B0BD /* HypnosisViewController.swift in Sources */,
 				B78FBC88199F138800498D34 /* HypnosisView.swift in Sources */,
 				B72633F6199F12CC0077F219 /* AppDelegate.swift in Sources */,
