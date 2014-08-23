@@ -27,6 +27,10 @@
     return self;
 }
 
+-(void) changeCircleColor:(UIColor *)circleColor{
+    self.circleColor = circleColor;
+}
+
 -(void)setCircleColor:(UIColor *)circleColor{
     _circleColor = circleColor;
     [self setNeedsDisplay];

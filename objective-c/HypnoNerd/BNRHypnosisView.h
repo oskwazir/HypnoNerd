@@ -10,4 +10,6 @@
 
 @interface BNRHypnosisView : UIView
 
+-(void) changeCircleColor:(UIColor *)circleColor;
+
 @end
