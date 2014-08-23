@@ -37,6 +37,11 @@
     NSLog(@"BNRHypnosisViewController loaded its view.");
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    NSLog(@"%@", textField.text);
+    return YES;
+}
+
 -(void)loadView{
     //create a view
     CGRect frame = [UIScreen mainScreen].bounds;
@@ -49,7 +54,12 @@
     //setting the border style on the text field will help us see it
     textField.borderStyle = UITextBorderStyleRoundedRect;
     [backgroundView addSubview:textField];
-
+    
+    textField.placeholder = @"Hypnotize me";
+    textField.returnKeyType = UIReturnKeyDone;
+    
+    textField.delegate = self;
+    
     //set backgroundView as “the” view of the view controller
     self.view = backgroundView;
 }
