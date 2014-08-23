@@ -40,7 +40,15 @@
 -(void)loadView{
     //create a view
     CGRect frame = [UIScreen mainScreen].bounds;
+    
     BNRHypnosisView *backgroundView = [[BNRHypnosisView alloc] initWithFrame:frame];
+    
+    CGRect textFieldRect = CGRectMake(40, 70, 240, 30);
+    UITextField *textField = [[UITextField alloc] initWithFrame:textFieldRect];
+    
+    //setting the border style on the text field will help us see it
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    [backgroundView addSubview:textField];
 
     //set backgroundView as “the” view of the view controller
     self.view = backgroundView;
