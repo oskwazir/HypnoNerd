@@ -81,7 +81,7 @@
         
         //Configure the label’s color and text
         messageLabel.backgroundColor = [UIColor clearColor];
-        messageLabel.textColor = [UIColor lightGrayColor];
+        messageLabel.textColor = [UIColor blackColor];
         messageLabel.text = message;
         
         //This method resizes the label relative to the size of the message it is displaying
@@ -104,6 +104,20 @@
         
         //Add the label to the hierarchy
         [self.view addSubview:messageLabel];
+        
+        UIInterpolatingMotionEffect *motionEffect;
+        motionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+        
+        motionEffect.minimumRelativeValue = @-25;
+        motionEffect.maximumRelativeValue = @25;
+        [messageLabel addMotionEffect:motionEffect];
+        
+        motionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+        
+        motionEffect.minimumRelativeValue = @-25;
+        motionEffect.maximumRelativeValue = @25;
+        [messageLabel addMotionEffect:motionEffect];
+        
     }
 }
 
