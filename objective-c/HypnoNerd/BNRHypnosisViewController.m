@@ -41,7 +41,7 @@
     //create a view
     CGRect frame = [UIScreen mainScreen].bounds;
     BNRHypnosisView *backgroundView = [[BNRHypnosisView alloc] initWithFrame:frame];
-    
+
     //set backgroundView as “the” view of the view controller
     self.view = backgroundView;
 }
