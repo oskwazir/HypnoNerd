@@ -27,7 +27,7 @@
         
         //create a UIImage from a file
         //This will create Hypno@2x.png on retina display devices
-        UIImage *image = [UIImage imageNamed:@"Time"];
+        UIImage *image = [UIImage imageNamed:@"reminder.png"];
         
         //put that image on the tab bar item
         self.tabBarItem.image = image;

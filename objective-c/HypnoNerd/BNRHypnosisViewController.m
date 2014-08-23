@@ -26,7 +26,7 @@
         
         //create a UIImage from a file
         //This will create Hypno@2x.png on retina display devices
-        UIImage *image = [UIImage imageNamed:@"Hypno.png"];
+        UIImage *image = [UIImage imageNamed:@"hypnosis.png"];
         
         //put that image on the tab bar item
         self.tabBarItem.image = image;
