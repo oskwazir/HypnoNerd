@@ -9,6 +9,10 @@
 #import "BNRHypnosisViewController.h"
 #import "BNRHypnosisView.h"
 
+@interface BNRHypnosisViewController() <UITextFieldDelegate>
+@end
+
+
 @implementation BNRHypnosisViewController
 
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil
