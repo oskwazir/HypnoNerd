@@ -74,6 +74,8 @@
     self.view = backgroundView;
 }
 
+
+
 -(void) drawHypnoticMessage:(NSString *)message{
     
     for (int i =0; i < 20; i++) {
