@@ -61,6 +61,15 @@ class HypnosisViewController: UIViewController,UITextFieldDelegate {
             //Add the label to the view hierarchy
             self.view.addSubview(messageLabel);
             
+            let motionEffect:UIInterpolatingMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis);
+            
+            motionEffect.minimumRelativeValue = -25;
+            motionEffect.maximumRelativeValue = 25;
+            
+            messageLabel.addMotionEffect(motionEffect);
+            
+            
+            
         }
     }
     
