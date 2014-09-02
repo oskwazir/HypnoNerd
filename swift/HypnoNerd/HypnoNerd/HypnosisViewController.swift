@@ -29,7 +29,11 @@ class HypnosisViewController: UIViewController {
         let frame:CGRect = UIScreen.mainScreen().bounds;
         let backgroundView:HypnosisView = HypnosisView(frame: frame);
         
-        let textFieldRect:CGRect = CGRectMake(40, 70, 240, 30);
+        let textFieldRect:CGRect = CGRectMake(
+            frame.origin.x + 10,
+            frame.origin.y + 30,
+            frame.size.width - 20,
+            30);
         let textField:UITextField = UITextField(frame:textFieldRect);
         
         //Setting the border style on the text field will allow us to see it more easily
